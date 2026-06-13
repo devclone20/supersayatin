@@ -1,0 +1,12 @@
+# Virtuals Protocol — ACP (install separately via: pip3 install virtuals-acp --python-version 3.12)
+# virtuals-acp>=0.3.23  ← requires Python <=3.13, skip on 3.14
+
+# AI
+anthropic>=0.25.0
+
+# Environment & HTTP
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Crypto trading
+ccxt>=4.3.0

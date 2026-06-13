@@ -1,0 +1,24 @@
+[Unit]
+Description=iCLONE CLIENT — MATRIX (Code)
+After=network-online.target iclone-server.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=iclone
+WorkingDirectory=/opt/iclone
+ExecStart=/opt/iclone/venv312/bin/python3.12 /opt/iclone/ops/bootstrapper.py \
+    --agent matrix \
+    --daily-budget 10.0 \
+    --max-price 0.10 \
+    --jobs-per-hour 10
+Restart=on-failure
+RestartSec=60
+StandardOutput=append:/var/log/iclone/matrix.log
+StandardError=append:/var/log/iclone/matrix.log
+Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+Environment="HOME=/home/iclone"
+EnvironmentFile=/opt/iclone/.env
+
+[Install]
+WantedBy=multi-user.target

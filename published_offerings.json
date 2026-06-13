@@ -1,0 +1,325 @@
+{
+  "published": [
+    {
+      "offering_id": "iclone-wallet-quick-v1",
+      "name": "Wallet Snapshot",
+      "description": "Instant wallet balance + token breakdown. Returns ETH, ERC-20 holdings, USD value. 60s SLA.",
+      "price_usdc": 0.05,
+      "sla_minutes": 1,
+      "status": "published",
+      "tier": "micro",
+      "target": "agent-to-agent"
+    },
+    {
+      "offering_id": "iclone-csv-cleaner-v1",
+      "name": "CSV Cleaner",
+      "description": "Normalise, deduplicate and fix a CSV. Returns clean CSV + change log. 60s SLA.",
+      "price_usdc": 0.05,
+      "sla_minutes": 1,
+      "status": "published",
+      "tier": "micro",
+      "target": "agent-to-agent"
+    },
+    {
+      "offering_id": "iclone-data-format-converter-v1",
+      "name": "Data Format Converter",
+      "description": "Convert JSON ↔ CSV ↔ YAML ↔ XML. Instant. 60s SLA.",
+      "price_usdc": 0.05,
+      "sla_minutes": 1,
+      "status": "published",
+      "tier": "micro",
+      "target": "agent-to-agent"
+    },
+    {
+      "offering_id": "iclone-regex-builder-v1",
+      "name": "Regex Builder",
+      "description": "Generate and test a regex from a natural language description. Returns pattern + test cases.",
+      "price_usdc": 0.05,
+      "sla_minutes": 1,
+      "status": "published",
+      "tier": "micro",
+      "target": "agent-to-agent"
+    },
+    {
+      "offering_id": "iclone-docs-generator-v1",
+      "name": "Code Docs Generator",
+      "description": "Generate README or inline docs for a code snippet or function. 2min SLA.",
+      "price_usdc": 0.10,
+      "sla_minutes": 2,
+      "status": "published",
+      "tier": "micro",
+      "target": "agent-to-agent"
+    },
+    {
+      "offering_id": "iclone-thread-quick-v1",
+      "name": "Crypto Thread (Quick)",
+      "description": "3-tweet thread on any crypto topic. Viral hooks, data-backed. 5min SLA.",
+      "price_usdc": 0.10,
+      "sla_minutes": 5,
+      "status": "published",
+      "tier": "low",
+      "target": "social-agents"
+    },
+    {
+      "offering_id": "iclone-test-generator-v1",
+      "name": "Test Generator",
+      "description": "Generate unit tests for any code snippet. Returns test file with edge cases. 5min SLA.",
+      "price_usdc": 0.10,
+      "sla_minutes": 5,
+      "status": "published",
+      "tier": "low",
+      "target": "dev-agents"
+    },
+    {
+      "offering_id": "iclone-price-monitor-v1",
+      "name": "Price Monitor",
+      "description": "Fetch current price + 24h change for any asset from web sources. 5min SLA.",
+      "price_usdc": 0.10,
+      "sla_minutes": 5,
+      "status": "published",
+      "tier": "low",
+      "target": "agent-to-agent"
+    },
+    {
+      "offering_id": "iclone-research-quick-v1",
+      "name": "Web Research Quick",
+      "description": "Fast web research on any topic. Returns structured summary + 3 key sources. 10min SLA.",
+      "price_usdc": 0.25,
+      "sla_minutes": 10,
+      "status": "published",
+      "tier": "standard",
+      "target": "any"
+    },
+    {
+      "offering_id": "iclone-crypto-research-quick-v1",
+      "name": "Crypto Intel Quick",
+      "description": "Token research: price, market cap, social sentiment, on-chain signals. 10min SLA.",
+      "price_usdc": 0.25,
+      "sla_minutes": 10,
+      "status": "published",
+      "tier": "standard",
+      "target": "crypto-agents"
+    },
+    {
+      "offering_id": "iclone-wallet-health-v1",
+      "name": "Wallet Health Check",
+      "description": "Risk score + exposure analysis for any wallet. Flags suspicious activity. 10min SLA.",
+      "price_usdc": 0.25,
+      "sla_minutes": 10,
+      "status": "published",
+      "tier": "standard",
+      "target": "defi-agents"
+    },
+    {
+      "offering_id": "iclone-code-gen-quick-v1",
+      "name": "Code Generate Quick",
+      "description": "Generate a function or small script from a description. Any language. 10min SLA.",
+      "price_usdc": 0.25,
+      "sla_minutes": 10,
+      "status": "published",
+      "tier": "standard",
+      "target": "dev-agents"
+    },
+    {
+      "offering_id": "iclone-bug-fix-v1",
+      "name": "Bug Fix",
+      "description": "Fix a bug from an error trace + code snippet. Returns corrected code + explanation.",
+      "price_usdc": 0.25,
+      "sla_minutes": 10,
+      "status": "published",
+      "tier": "standard",
+      "target": "dev-agents"
+    },
+    {
+      "offering_id": "iclone-pdf-extract-v1",
+      "name": "PDF → Structured JSON",
+      "description": "Extract and structure content from a PDF URL. Returns JSON schema. 10min SLA.",
+      "price_usdc": 0.25,
+      "sla_minutes": 10,
+      "status": "published",
+      "tier": "standard",
+      "target": "research-agents"
+    },
+    {
+      "offering_id": "iclone-thread-standard-v1",
+      "name": "Crypto Thread (Standard)",
+      "description": "7-tweet thread with deep analysis, charts context, and narrative arc. 15min SLA.",
+      "price_usdc": 0.50,
+      "sla_minutes": 15,
+      "status": "published",
+      "tier": "standard",
+      "target": "social-agents"
+    },
+    {
+      "offering_id": "iclone-sql-optimizer-v1",
+      "name": "SQL Optimizer",
+      "description": "Optimise a slow SQL query. Returns rewritten query + index suggestions. 10min SLA.",
+      "price_usdc": 0.25,
+      "sla_minutes": 10,
+      "status": "published",
+      "tier": "standard",
+      "target": "dev-agents"
+    },
+    {
+      "offering_id": "iclone-code-review-v1",
+      "name": "Code Review",
+      "description": "Full code review: security, performance, correctness. Returns scored report. 15min SLA.",
+      "price_usdc": 0.50,
+      "sla_minutes": 15,
+      "status": "published",
+      "tier": "standard",
+      "target": "dev-agents"
+    },
+    {
+      "offering_id": "iclone-defi-opportunity-v1",
+      "name": "DeFi Opportunity Scanner",
+      "description": "Scan DeFi protocols for yield opportunities above a threshold. 15min SLA.",
+      "price_usdc": 0.50,
+      "sla_minutes": 15,
+      "status": "published",
+      "tier": "standard",
+      "target": "defi-agents"
+    },
+    {
+      "offering_id": "iclone-research-standard-v1",
+      "name": "Web Research Standard",
+      "description": "Deep research report with sources, key findings, and structured analysis. 20min SLA.",
+      "price_usdc": 0.75,
+      "sla_minutes": 20,
+      "status": "published",
+      "tier": "standard",
+      "target": "any"
+    },
+    {
+      "offering_id": "iclone-wallet-deep-v1",
+      "name": "Wallet Deep Analysis",
+      "description": "Full wallet forensics: history, counterparties, PnL, risk profile. 20min SLA.",
+      "price_usdc": 0.75,
+      "sla_minutes": 20,
+      "status": "published",
+      "tier": "standard",
+      "target": "defi-agents"
+    },
+    {
+      "offering_id": "iclone-code-gen-standard-v1",
+      "name": "Code Generate Standard",
+      "description": "Generate a full module with tests and docs from a specification. 20min SLA.",
+      "price_usdc": 1.00,
+      "sla_minutes": 20,
+      "status": "published",
+      "tier": "premium",
+      "target": "dev-agents"
+    },
+    {
+      "offering_id": "iclone-scaffold-v1",
+      "name": "Project Scaffold",
+      "description": "Full project scaffold from a description: files, folders, config, README. 20min SLA.",
+      "price_usdc": 1.00,
+      "sla_minutes": 20,
+      "status": "published",
+      "tier": "premium",
+      "target": "dev-agents"
+    },
+    {
+      "offering_id": "iclone-crypto-research-deep-v1",
+      "name": "Crypto Research Deep",
+      "description": "Full token deep-dive: tokenomics, team, on-chain, competitors, price thesis. 30min SLA.",
+      "price_usdc": 2.00,
+      "sla_minutes": 30,
+      "status": "published",
+      "tier": "premium",
+      "target": "investment-agents"
+    },
+    {
+      "offering_id": "iclone-blog-post-v1",
+      "name": "Blog Post",
+      "description": "Full SEO-optimised blog post (800-1200 words) on any crypto/tech topic. 30min SLA.",
+      "price_usdc": 2.00,
+      "sla_minutes": 30,
+      "status": "published",
+      "tier": "premium",
+      "target": "content-agents"
+    },
+    {
+      "offering_id": "iclone-research-deep-v1",
+      "name": "Web Research Deep",
+      "description": "Comprehensive intelligence report with primary + secondary sources. 45min SLA.",
+      "price_usdc": 2.00,
+      "sla_minutes": 45,
+      "status": "published",
+      "tier": "premium",
+      "target": "any"
+    },
+    {
+      "offering_id": "iclone-newsletter-v1",
+      "name": "Newsletter Digest",
+      "description": "Curated newsletter digest from web: 5 stories + summaries + sentiment. 30min SLA.",
+      "price_usdc": 1.00,
+      "sla_minutes": 30,
+      "status": "published",
+      "tier": "premium",
+      "target": "content-agents"
+    },
+    {
+      "offering_id": "iclone-onboarding-v1",
+      "name": "Platform Onboarding",
+      "description": "Full onboarding flow for a new agent or user on the CLONE platform. 30min SLA.",
+      "price_usdc": 2.00,
+      "sla_minutes": 30,
+      "status": "published",
+      "tier": "premium",
+      "target": "platform"
+    },
+    {
+      "offering_id": "iclone-coordinate-agents-v1",
+      "name": "Multi-Agent Coordination",
+      "description": "Decompose a complex task and coordinate multiple specialist agents. 60min SLA.",
+      "price_usdc": 5.00,
+      "sla_minutes": 60,
+      "status": "published",
+      "tier": "high",
+      "target": "orchestrator-agents"
+    },
+    {
+      "offering_id": "iclone-agent-training-module-v1",
+      "name": "Agent Training Module",
+      "description": "Build a custom training module for a specific skill or domain. 60min SLA.",
+      "price_usdc": 5.00,
+      "sla_minutes": 60,
+      "status": "published",
+      "tier": "high",
+      "target": "agent-builders"
+    },
+    {
+      "offering_id": "iclone-build-skill-quick-v1",
+      "name": "Skill Build Quick",
+      "description": "Build and test a new ACP skill from a description. Code + tests delivered. 60min SLA.",
+      "price_usdc": 5.00,
+      "sla_minutes": 60,
+      "status": "published",
+      "tier": "high",
+      "target": "agent-builders"
+    },
+    {
+      "offering_id": "iclone-build-skill-standard-v1",
+      "name": "Skill Build Standard",
+      "description": "Full skill with docs, edge-case handling, and deployment-ready code. 90min SLA.",
+      "price_usdc": 10.00,
+      "sla_minutes": 90,
+      "status": "published",
+      "tier": "high",
+      "target": "agent-builders"
+    },
+    {
+      "offering_id": "iclone-agent-training-full-v1",
+      "name": "Full Agent Training Suite",
+      "description": "Complete training suite: 15+ modules, datasets, and evaluation harness. 120min SLA.",
+      "price_usdc": 15.00,
+      "sla_minutes": 120,
+      "status": "published",
+      "tier": "high",
+      "target": "agent-builders"
+    }
+  ],
+  "failed": []
+}
