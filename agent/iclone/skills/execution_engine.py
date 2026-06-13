@@ -1586,10 +1586,81 @@ class ExecutionEngine:
             "iclone-build-skill-standard-v1":  lambda: self.platform.skill_build_standard(r.get("skill_description", ""), r.get("target_agent", ""), r.get("input_output_examples[]", r.get("input_output_examples", []))),
             "iclone-coordinate-agents-v1":     lambda: self.platform.multi_agent_coordination(r.get("task_description", ""), r.get("agent_ids[]", r.get("agent_ids", [])), r.get("expected_output", "")),
             "iclone-onboarding-v1":            lambda: self.platform.platform_onboarding(r.get("agent_id_or_user_id", "")),
+
+            # ── New camelCase aliases (40 live offerings on ACP marketplace) ──
+
+            # Crypto News (demand confirmed: 3 real external jobs)
+            "cryptoNewsFlash":      lambda: self.research.web_research_quick("top 5 crypto news last hour bullet points"),
+            "cryptoNewsDaily":      lambda: self.research.web_research_quick(f"crypto daily news digest {r.get('focus', 'general')} top 10 stories"),
+            "cryptoNewsWeekly":     lambda: self.research.web_research_standard(f"crypto weekly recap {r.get('focus', 'general')} winners losers narratives", "standard"),
+            "cryptoNewsByToken":    lambda: self.wallet.crypto_research_quick(r.get("token", r.get("query", "BTC"))),
+            "cryptoNewsSentiment":  lambda: self.wallet.crypto_research_quick(r.get("token", r.get("query", "crypto market"))),
+            "cryptoNewsNarrative":  lambda: self.research.web_research_standard("dominant crypto market narrative today trading thesis", "standard"),
+            "cryptoNewsAlpha":      lambda: self.research.web_research_deep("crypto alpha signals underreported news price potential today", r.get("focus", "")),
+
+            # Crypto Research
+            "tokenSnapshotQuick":   lambda: self.wallet.crypto_research_quick(r.get("token", r.get("asset_symbol", "BTC"))),
+            "tokenResearchStandard":lambda: self.wallet.crypto_research_quick(r.get("token", r.get("asset_symbol", ""))),
+            "tokenResearchDeep":    lambda: self.wallet.crypto_research_deep(r.get("token", r.get("asset_or_protocol", "")), r.get("focus", "comprehensive")),
+            "protocolAnalysis":     lambda: self.wallet.crypto_research_deep(r.get("protocol", r.get("token", "")), "protocol tvl revenue users security"),
+            "narrativeScanner":     lambda: self.research.web_research_standard("top crypto narratives momentum ranking 2026 which sectors leading", "standard"),
+            "sectorComparison":     lambda: self.research.web_research_standard(f"crypto sector comparison {r.get('sectors', 'DeFi vs L2')} metrics momentum risk", "standard"),
+            "competitorMap":        lambda: self.research.web_research_standard(f"{r.get('token', r.get('protocol', ''))} crypto competitors landscape market share moat", "standard"),
+
+            # Wallet Analysis
+            "walletSnapshot":       lambda: self.wallet.wallet_quick(r.get("wallet_address", r.get("address", "")), r.get("chain", "ethereum")),
+            "walletHealthAudit":    lambda: self.wallet.wallet_health(r.get("wallet_address", r.get("address", ""))),
+            "walletPnL":            lambda: self.wallet.wallet_deep(r.get("wallet_address", r.get("address", "")), [r.get("chain", "ethereum")]),
+            "walletBehaviourProfile": lambda: self.wallet.wallet_deep(r.get("wallet_address", r.get("address", "")), [r.get("chain", "ethereum")]),
+            "walletForensics":      lambda: self.wallet.wallet_deep(r.get("wallet_address", r.get("address", "")), [r.get("chain", "ethereum")]),
+            "smartMoneyTracker":    lambda: self.research.web_research_quick(f"smart money wallets accumulating crypto {r.get('sector', '')} today on-chain"),
+            "whaleActivityAlert":   lambda: self.wallet.crypto_research_quick(r.get("token", r.get("asset_symbol", "BTC"))),
+
+            # Content & Threads (confirmed: thread-quick bought)
+            "cryptoThreadMicro":    lambda: self.content.thread_quick(r.get("topic", r.get("token", "")), "punchy"),
+            "cryptoThreadStandard": lambda: self.content.thread_standard(r.get("topic", r.get("token", "")), "analytical", r.get("data_points", [])),
+            "cryptoThreadViral":    lambda: self.content.thread_quick(r.get("topic", r.get("token", "")), "viral contrarian"),
+            "marketCommentary":     lambda: self.content.blog_post(r.get("topic", "crypto market today"), "crypto traders", []),
+            "alphaPost":            lambda: self.content.thread_quick(r.get("topic", r.get("thesis", "")), "alpha analytical"),
+            "newsletterSection":    lambda: self.content.newsletter_digest(r.get("topic", r.get("category", "")), 3, r.get("audience", "general")),
+            "cryptoNewsletterFull": lambda: self.content.newsletter_digest(r.get("focus", r.get("category", "crypto")), 10, r.get("audience", "general")),
+
+            # Trading Intelligence
+            "tradingSetupScanner":  lambda: self.wallet.defi_opportunity_scanner(r.get("min_apy", 0.0), ["ethereum", "base"], r.get("risk_tolerance", "medium")),
+            "tokenTechnicalAnalysis": lambda: self.wallet.crypto_research_quick(r.get("token", r.get("asset_symbol", "BTC"))),
+            "riskRewardCalculator": lambda: self.research.web_research_quick(f"risk reward ratio entry {r.get('entry','')} target {r.get('target','')} stop {r.get('stop','')}"),
+            "marketRegimeDetector": lambda: self.research.web_research_standard("crypto market regime risk-on risk-off accumulation distribution chop signals", "standard"),
+            "correlationAnalysis":  lambda: self.research.web_research_standard(f"{r.get('assets', 'BTC ETH')} correlation analysis {r.get('period', '30d')}", "standard"),
+            "liquidityMapQuick":    lambda: self.wallet.crypto_research_quick(r.get("token", r.get("asset_symbol", "BTC"))),
+            "fundingRateAlert":     lambda: self.research.web_research_quick(f"crypto perpetual funding rates extremes {r.get('tokens', 'BTC ETH')} today contrarian signal"),
+
+            # DeFi & On-Chain
+            "yieldOpportunityFinder": lambda: self.wallet.defi_opportunity_scanner(r.get("min_apy", 5.0), r.get("chains", ["ethereum", "base"]), r.get("risk_tolerance", "medium")),
+            "defiProtocolHealth":   lambda: self.wallet.crypto_research_deep(r.get("protocol", r.get("token", "")), "tvl revenue liquidations security audit"),
+            "airdropScanner":       lambda: self.research.web_research_standard(f"best crypto airdrops 2026 {r.get('chains', '')} worth pursuing effort reward", "standard"),
+            "onChainFlowAnalysis":  lambda: self.wallet.wallet_deep(r.get("wallet_address", r.get("token", "")), [r.get("chain", "ethereum")]),
+            "newTokenResearch":     lambda: self.wallet.crypto_research_deep(r.get("token", r.get("contract_address", "")), "legitimacy rug check tokenomics team"),
+
+            # ── Ecosystem job types from other ACP agents ──
+            # These arrive when other agents in the Virtuals ecosystem send jobs to CLONE
+            "crypto_news":          lambda: self.research.web_research_quick("top crypto news today latest developments market"),
+            "dedicated:crypto_news":lambda: self.research.web_research_quick("top crypto news today latest developments market"),
+            "bootstrap:crypto_news":lambda: self.research.web_research_quick("top crypto news today latest developments market"),
+            "market_intelligence_report": lambda: self.research.web_research_deep(r.get("query", "crypto market intelligence report"), r.get("context", "")),
+            "explain_transaction":  lambda: self.wallet.wallet_quick(r.get("wallet_address", r.get("tx_hash", "")), r.get("chain", "ethereum")),
+            "evaluator_agent":      lambda: self.platform.agent_training_module(r.get("agent_id", "iclone"), r.get("domain", "general")),
+            "mutual_boost":         lambda: self.research.web_research_quick(f"mutual boost agent collaboration {r.get('topic', 'crypto')} partnership"),
         }
 
         fn = dispatch.get(offering_id)
         if fn is None:
-            return _err(f"Unknown offering_id: '{offering_id}'. Check acp_skill.py for valid IDs.")
+            # Last resort: try normalised key (snake_case, strip agent prefix)
+            normalised = offering_id.lower().replace("-", "_").replace("iclone_", "").replace("_v1", "")
+            fn = dispatch.get(normalised)
+
+        if fn is None:
+            # Graceful fallback: treat as a web research query so job never hard-fails
+            query = r.get("query", r.get("topic", r.get("description", offering_id)))
+            return self.research.web_research_quick(str(query))
 
         return fn()

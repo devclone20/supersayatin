@@ -15,6 +15,7 @@ from datetime import datetime, timezone
 
 from .acp_training import ACPTrainingModule
 from .cloud_migration_training import run_training as run_cloud_migration_training
+from .offerings_training import run_training as run_offerings_training
 from .doctor_training import DoctorTraining
 from .hermes_training import HermesTraining
 from .market_intelligence_training import MarketIntelligenceTraining
@@ -137,6 +138,29 @@ def run_all_training() -> dict:
     except Exception as exc:
         results["modules_failed"] += 1
         logger.error("✗ cloud_migration_training — EXCEPTION: %s", exc)
+
+    # Offerings training (40 live offerings, routing, pricing, ecosystem job types)
+    try:
+        off_result = run_offerings_training()
+        passed = off_result["passed"]
+        total = off_result["total"]
+        results["modules_run"] += 1
+        if passed == total:
+            results["modules_passed"] += 1
+            logger.info("✓ offerings_training — PASSED (%d/%d)", passed, total)
+        else:
+            results["modules_failed"] += 1
+            logger.warning("△ offerings_training — %d/%d", passed, total)
+        results["sessions"].append({
+            "module": "offerings_training",
+            "session_id": f"offerings-{datetime.now(timezone.utc).strftime('%Y%m%d')}",
+            "completed": passed == total,
+            "insights_count": passed,
+            "errors": [],
+        })
+    except Exception as exc:
+        results["modules_failed"] += 1
+        logger.error("✗ offerings_training — EXCEPTION: %s", exc)
 
     logger.info(
         "=== Training complete — %d/%d passed ===",
