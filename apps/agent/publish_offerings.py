@@ -1,7 +1,7 @@
 """
 iCLONE — Publish ACP Offerings
 Publishes all 30 offerings from acp_skill.py to the Virtuals Protocol ACP marketplace.
-Run: python3 agent/publish_offerings.py
+Run: python3 apps/agent/publish_offerings.py
 """
 
 import os
@@ -9,9 +9,11 @@ import sys
 import json
 from pathlib import Path
 
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+
 # Load .env
 from dotenv import load_dotenv
-load_dotenv(Path(__file__).parent.parent / ".env")
+load_dotenv(_REPO_ROOT / ".env")
 
 VIRTUALS_API_KEY = os.environ.get("VIRTUALS_API_KEY")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
@@ -116,7 +118,7 @@ def main():
             print(f"   - {f['offering_id']}: {f['error']}")
 
     # Save results
-    output = Path(__file__).parent.parent / "published_offerings.json"
+    output = _REPO_ROOT / "infra" / "offerings" / "published_offerings.json"
     with open(output, "w") as f:
         json.dump({"published": results, "failed": failed}, f, indent=2)
     print(f"\nReport saved to: {output}")

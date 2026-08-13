@@ -4,7 +4,7 @@ Validates iCLONE's knowledge of the full Virtuals Protocol whitepaper.
 """
 
 import pytest
-from agent.iclone.training.virtuals_protocol_training import VirtualsProtocolTraining
+from iclone.training.virtuals_protocol_training import VirtualsProtocolTraining
 
 
 @pytest.fixture

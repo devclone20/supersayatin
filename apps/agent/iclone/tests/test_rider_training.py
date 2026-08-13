@@ -4,7 +4,7 @@ Validates iCLONE's orchestration and multi-agent coordination intelligence.
 """
 
 import pytest
-from agent.iclone.training.rider_training import RiderTraining
+from iclone.training.rider_training import RiderTraining
 
 
 @pytest.fixture

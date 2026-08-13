@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
-sys.path.insert(0, str(Path(__file__).parent.parent / "agent"))
+sys.path.insert(0, str(Path(__file__).parent.parent / "apps" / "agent"))
 from dotenv import load_dotenv
 load_dotenv(Path.home() / ".env.local")
 load_dotenv(Path(__file__).parent.parent / ".env", override=False)

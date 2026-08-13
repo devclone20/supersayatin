@@ -10,10 +10,10 @@ Cada cliente usa a mesma developer wallet mas um agent_id diferente.
 O acp-cli faz switch automático antes de qualquer operação.
 
 Run:
-  python3 ops/bootstrapper.py --agent supersayatin
-  python3 ops/bootstrapper.py --agent matrix --dry-run
-  python3 ops/bootstrapper.py --multi
-  python3 ops/bootstrapper.py --agent auto --max-price 0.05
+  python3 infra/ops/bootstrapper.py --agent supersayatin
+  python3 infra/ops/bootstrapper.py --agent matrix --dry-run
+  python3 infra/ops/bootstrapper.py --multi
+  python3 infra/ops/bootstrapper.py --agent auto --max-price 0.05
 """
 
 import argparse
@@ -29,10 +29,12 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-load_dotenv(Path.home() / ".env.local")
-load_dotenv(Path(__file__).parent.parent / ".env", override=False)
+_REPO_ROOT = Path(__file__).resolve().parents[2]
 
-sys.path.insert(0, str(Path(__file__).parent.parent / "agent"))
+load_dotenv(Path.home() / ".env.local")
+load_dotenv(_REPO_ROOT / ".env", override=False)
+
+sys.path.insert(0, str(_REPO_ROOT / "apps" / "agent"))
 from iclone import db
 
 _ACP_CANDIDATES = [
@@ -142,7 +144,7 @@ def get_clone_offerings(categories: list[str]) -> list[dict]:
     The file is the authoritative source — no API call needed.
     Falls back to acp agent whoami if the file is missing.
     """
-    offerings_path = Path(__file__).parent.parent / "published_offerings.json"
+    offerings_path = _REPO_ROOT / "infra" / "offerings" / "published_offerings.json"
 
     if offerings_path.exists():
         data = json.loads(offerings_path.read_text())

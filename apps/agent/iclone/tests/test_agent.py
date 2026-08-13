@@ -1,14 +1,14 @@
 """
 TDD — iCLONE Agent Test Suite
 Tests the agent core: initialisation, skill loading, interface.
-Run: pytest agent/iclone/tests/ -v
+Run: pytest apps/agent/iclone/tests/ -v
 """
 
 import pytest
 from unittest.mock import patch, MagicMock
 
-from agent.iclone.agent import ICloneAgent
-from agent.iclone.config import AgentConfig
+from iclone.agent import ICloneAgent
+from iclone.config import AgentConfig
 
 
 # =============================================================================

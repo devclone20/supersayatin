@@ -4,7 +4,7 @@ Validates iCLONE's academic research and scientific intelligence.
 """
 
 import pytest
-from agent.iclone.training.doctor_training import DoctorTraining
+from iclone.training.doctor_training import DoctorTraining
 
 
 @pytest.fixture

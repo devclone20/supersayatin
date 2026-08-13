@@ -9,7 +9,7 @@ Architecture:
   Supabase   → record every state transition
 
 Run:
-  ~/Desktop/AI/iclone/venv312/bin/python3.12 agent/server.py
+  ~/Desktop/AI/iclone/venv312/bin/python3.12 apps/agent/server.py
 """
 
 import json
@@ -23,8 +23,10 @@ from typing import Any
 
 from dotenv import load_dotenv
 
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+
 load_dotenv(Path.home() / ".env.local")
-load_dotenv(Path(__file__).parent.parent / ".env", override=False)
+load_dotenv(_REPO_ROOT / ".env", override=False)
 
 sys.path.insert(0, str(Path(__file__).parent))
 
@@ -106,7 +108,7 @@ class ICloneACPServer:
 
     def _load_offerings(self) -> dict[str, dict]:
         """Load offerings by name (CLI uses name, not id)."""
-        offerings_path = Path(__file__).parent.parent / "published_offerings.json"
+        offerings_path = _REPO_ROOT / "infra" / "offerings" / "published_offerings.json"
         if not offerings_path.exists():
             return {}
         data = json.loads(offerings_path.read_text())

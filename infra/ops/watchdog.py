@@ -7,7 +7,7 @@ If not, restarts it. Logs to ~/Library/Logs/iclone-watchdog.log.
 Run as launchd job every 5 minutes (see com.iclone.watchdog.plist).
 
 Usage:
-  ~/Desktop/AI/iclone/venv312/bin/python3.12 ops/watchdog.py
+  ~/Desktop/AI/iclone/venv312/bin/python3.12 infra/ops/watchdog.py
 """
 
 import os
@@ -21,9 +21,9 @@ from datetime import datetime
 
 LOG_FILE = Path.home() / "Library" / "Logs" / "iclone-watchdog.log"
 PID_FILE = Path.home() / "Library" / "Application Support" / "iclone" / "server.pid"
-PROJECT = Path(__file__).parent.parent
+PROJECT = Path(__file__).resolve().parents[2]
 VENV_PYTHON = PROJECT / "venv312" / "bin" / "python3.12"
-SERVER_SCRIPT = PROJECT / "agent" / "server.py"
+SERVER_SCRIPT = PROJECT / "apps" / "agent" / "server.py"
 
 logging.basicConfig(
     level=logging.INFO,

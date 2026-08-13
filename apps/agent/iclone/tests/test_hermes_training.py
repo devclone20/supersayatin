@@ -4,7 +4,7 @@ Validates iCLONE's knowledge of full Hermes + ACP CLI command set.
 """
 
 import pytest
-from agent.iclone.training.hermes_training import HermesTraining
+from iclone.training.hermes_training import HermesTraining
 
 
 @pytest.fixture

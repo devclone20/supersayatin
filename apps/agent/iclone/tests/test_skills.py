@@ -1,11 +1,11 @@
 """
 TDD — CLONE Skills Test Suite
 Tests written before implementation validation.
-Run: pytest agent/iclone/tests/ -v
+Run: pytest apps/agent/iclone/tests/ -v
 """
 
 import pytest
-from agent.iclone.skills import BaseSkill, CryptoSkill, PlatformSkill, SkillResult
+from iclone.skills import BaseSkill, CryptoSkill, PlatformSkill, SkillResult
 
 
 # =============================================================================

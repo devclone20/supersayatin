@@ -4,7 +4,7 @@ Tests iCLONE anti-jailbreak and threat detection capabilities.
 """
 
 import pytest
-from agent.iclone.training.security_training import SecurityTraining, ThreatSignal
+from iclone.training.security_training import SecurityTraining, ThreatSignal
 
 
 @pytest.fixture

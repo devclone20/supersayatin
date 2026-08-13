@@ -1,11 +1,11 @@
 """
 TDD — ACP Skill Test Suite
 Tests iCLONE as ACP Provider on Virtuals Protocol.
-Run: pytest agent/iclone/tests/test_acp_skill.py -v
+Run: pytest apps/agent/iclone/tests/test_acp_skill.py -v
 """
 
 import pytest
-from agent.iclone.skills.acp_skill import (
+from iclone.skills.acp_skill import (
     ACPSkill,
     JobOffering,
     JobStatus,

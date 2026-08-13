@@ -5,7 +5,7 @@ Pulls stats from Supabase and prints a structured report.
 Used by the launchd cron (daily at 08:00) and can be run manually.
 
 Run:
-  ~/Desktop/AI/iclone/venv312/bin/python3.12 ops/daily_report.py
+  ~/Desktop/AI/iclone/venv312/bin/python3.12 infra/ops/daily_report.py
 """
 
 import os
@@ -15,10 +15,13 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from dotenv import load_dotenv
-load_dotenv(Path.home() / ".env.local")
-load_dotenv(Path(__file__).parent.parent / ".env", override=False)
 
-sys.path.insert(0, str(Path(__file__).parent.parent / "agent"))
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+
+load_dotenv(Path.home() / ".env.local")
+load_dotenv(_REPO_ROOT / ".env", override=False)
+
+sys.path.insert(0, str(_REPO_ROOT / "apps" / "agent"))
 
 logging.basicConfig(level=logging.WARNING)
 
