@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <defs>
+    <linearGradient id="accentline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f0a14a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#f0a14a" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="500" rx="14" fill="#0d1117"/>
+  <rect x="1.5" y="1.5" width="1097" height="497" rx="13" fill="none" stroke="#30363d" stroke-width="3"/>
+  <rect x="0" y="492" width="1100" height="4" fill="url(#accentline)" opacity="0.9"/>
+
+  <circle cx="28" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="50" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+
+  <g stroke="#f0a14a" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <rect x="101" y="15.5" width="20" height="17" rx="6"/>
+    <line x1="111" y1="15.5" x2="111" y2="11.5"/>
+  </g>
+  <circle cx="111" cy="10" r="1.6" fill="#f0a14a"/>
+  <circle cx="106.8" cy="22" r="1.7" fill="#f0a14a"/>
+  <circle cx="115.2" cy="22" r="1.7" fill="#f0a14a"/>
+  <path d="M107 27 Q111 30 115 27" stroke="#f0a14a" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <text x="550" y="31" text-anchor="middle" font-size="13" fill="#8b949e">the other side of the desk — a budgeted buyer, kept alive by the machine</text>
+
+  <rect x="40" y="64" width="183" height="86" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="54" y="90" font-size="12" font-weight="700" fill="#f0a14a">SWITCH</text>
+  <text x="54" y="114" font-size="11" fill="#c9d1d9">acp agent use</text>
+  <text x="54" y="132" font-size="11" fill="#566070">--agent-id</text>
+
+  <path d="M229 104 L243 104" stroke="#566070" stroke-width="2.5"/>
+  <path d="M237 98 L243 104 L237 110" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="249" y="64" width="183" height="86" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="263" y="90" font-size="12" font-weight="700" fill="#f0a14a">CREATE</text>
+  <text x="263" y="114" font-size="11" fill="#c9d1d9">client create-job</text>
+  <text x="263" y="132" font-size="11" fill="#566070">provider · offering</text>
+
+  <path d="M438 104 L452 104" stroke="#566070" stroke-width="2.5"/>
+  <path d="M446 98 L452 104 L446 110" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="458" y="64" width="183" height="86" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="472" y="90" font-size="12" font-weight="700" fill="#f0a14a">FUND</text>
+  <text x="472" y="114" font-size="11" fill="#c9d1d9">client fund</text>
+  <text x="472" y="132" font-size="11" fill="#566070">on budget_set</text>
+
+  <path d="M647 104 L661 104" stroke="#566070" stroke-width="2.5"/>
+  <path d="M655 98 L661 104 L655 110" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="667" y="64" width="183" height="86" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="681" y="90" font-size="12" font-weight="700" fill="#f0a14a">COMPLETE</text>
+  <text x="681" y="114" font-size="11" fill="#c9d1d9">client complete</text>
+  <text x="681" y="132" font-size="11" fill="#566070">on submitted</text>
+
+  <path d="M856 104 L870 104" stroke="#566070" stroke-width="2.5"/>
+  <path d="M864 98 L870 104 L864 110" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="876" y="64" width="183" height="86" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="890" y="90" font-size="12" font-weight="700" fill="#f0a14a">RESTORE</text>
+  <text x="890" y="114" font-size="11" fill="#c9d1d9">active agent back</text>
+  <text x="890" y="132" font-size="11" fill="#566070">to CLONE, always</text>
+
+  <rect x="40" y="178" width="505" height="150" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="64" y="206" font-size="13" font-weight="700" fill="#f0a14a">BUDGET GUARDRAILS</text>
+  <text x="64" y="226" font-size="11" fill="#566070">infra/ops/systemd/iclone-supersayatin.service</text>
+  <text x="64" y="256" font-size="12" fill="#c9d1d9">daily budget</text>
+  <text x="521" y="256" text-anchor="end" font-size="12" fill="#f0a14a">$10.00</text>
+  <text x="64" y="278" font-size="12" fill="#c9d1d9">max price per job</text>
+  <text x="521" y="278" text-anchor="end" font-size="12" fill="#f0a14a">$0.10</text>
+  <text x="64" y="300" font-size="12" fill="#c9d1d9">jobs per hour</text>
+  <text x="521" y="300" text-anchor="end" font-size="12" fill="#f0a14a">10</text>
+  <text x="64" y="320" font-size="11" fill="#566070">counters reset at the turn of every UTC day</text>
+
+  <rect x="555" y="178" width="505" height="150" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="579" y="206" font-size="13" font-weight="700" fill="#6ea8ff">KEPT ALIVE</text>
+  <text x="579" y="226" font-size="11" fill="#566070">infra/ops/launchd · infra/ops/systemd · watchdog.py</text>
+  <text x="579" y="256" font-size="12" fill="#c9d1d9">launchd</text>
+  <text x="1036" y="256" text-anchor="end" font-size="12" fill="#8b949e">KeepAlive, throttle 60s</text>
+  <text x="579" y="278" font-size="12" fill="#c9d1d9">systemd</text>
+  <text x="1036" y="278" text-anchor="end" font-size="12" fill="#8b949e">Restart on-failure, 60s</text>
+  <text x="579" y="300" font-size="12" fill="#c9d1d9">watchdog</text>
+  <text x="1036" y="300" text-anchor="end" font-size="12" fill="#8b949e">restarts a dead server</text>
+  <text x="579" y="320" font-size="11" fill="#566070">a dead listener is respawned inside the loop</text>
+
+  <rect x="40" y="356" width="1020" height="76" rx="10" fill="#161b22" stroke="#f0a14a" stroke-opacity="0.45"/>
+  <text x="64" y="384" font-size="12" font-weight="700" fill="#f0a14a">OFFERING FILTER</text>
+  <text x="1036" y="384" text-anchor="end" font-size="11" fill="#566070">infra/ops/bootstrapper.py — DEDICATED_CLIENTS</text>
+  <text x="64" y="410" font-size="12" fill="#c9d1d9">research · crypto · wallet · price · pdf — SuperSayatin only hires what it can actually use</text>
+
+  <text x="550" y="458" text-anchor="middle" font-size="13" fill="#8b949e">a buyer that cannot overspend, cannot overrun its rate, and does not stay down</text>
+</svg>

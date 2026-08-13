@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <defs>
+    <linearGradient id="accentline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f0a14a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#f0a14a" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="420" rx="14" fill="#0d1117"/>
+  <rect x="1.5" y="1.5" width="1397" height="417" rx="13" fill="none" stroke="#30363d" stroke-width="3"/>
+  <rect x="0" y="412" width="1400" height="4" fill="url(#accentline)" opacity="0.9"/>
+
+  <circle cx="28" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="50" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+
+  <g stroke="#f0a14a" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <rect x="101" y="15.5" width="20" height="17" rx="6"/>
+    <line x1="111" y1="15.5" x2="111" y2="11.5"/>
+  </g>
+  <circle cx="111" cy="10" r="1.6" fill="#f0a14a"/>
+  <circle cx="106.8" cy="22" r="1.7" fill="#f0a14a"/>
+  <circle cx="115.2" cy="22" r="1.7" fill="#f0a14a"/>
+  <path d="M107 27 Q111 30 115 27" stroke="#f0a14a" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <text x="700" y="31" text-anchor="middle" font-size="13" fill="#8b949e">an ai agent fused with an nft — this repository is its body</text>
+
+  <rect x="64" y="88" width="46" height="3" rx="1.5" fill="#f0a14a"/>
+  <text x="64" y="114" font-size="11" fill="#566070">devclone20 · iNFT · CLONE FRAME line</text>
+
+  <text x="64" y="182" font-size="72" font-weight="700"><tspan fill="#e6edf3">SUPER</tspan><tspan fill="#f0a14a">SAYATIN</tspan></text>
+
+  <text x="66" y="214" font-size="15" fill="#c9d1d9">an iNFT — a Pi coding agent under the SuperSayatin soul</text>
+  <text x="66" y="246" font-size="13" fill="#8b949e">the crew's executor and competitor of CLONE FRAME · whoever holds the token holds the agent</text>
+  <text x="66" y="268" font-size="13" fill="#8b949e">high-conviction execution under one risk doctrine · Virtuals ACP provider and client on Base</text>
+
+  <rect x="64" y="300" width="75" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+  <text x="101.5" y="319" text-anchor="middle" font-size="12" fill="#c9d1d9">Python</text>
+
+  <rect x="151" y="300" width="54" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+  <text x="178" y="319" text-anchor="middle" font-size="12" fill="#c9d1d9">MIT</text>
+
+  <rect x="217" y="300" width="118" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+  <text x="276" y="319" text-anchor="middle" font-size="12" fill="#c9d1d9">Virtuals ACP</text>
+
+  <rect x="347" y="300" width="111" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+  <text x="402.5" y="319" text-anchor="middle" font-size="12" fill="#c9d1d9">Base · 8453</text>
+
+  <rect x="470" y="300" width="90" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+  <text x="515" y="319" text-anchor="middle" font-size="12" fill="#c9d1d9">ERC-8004</text>
+
+  <rect x="572" y="300" width="118" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+  <text x="631" y="319" text-anchor="middle" font-size="12" fill="#c9d1d9">Pi substrate</text>
+
+  <rect x="702" y="300" width="111" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+  <text x="757.5" y="319" text-anchor="middle" font-size="12" fill="#c9d1d9">soul v1.0.0</text>
+
+  <rect x="846" y="92" width="490" height="256" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="870" y="126" font-size="13" font-weight="700" fill="#f0a14a">identity.json</text>
+  <line x1="870" y1="140" x2="1312" y2="140" stroke="#30363d"/>
+
+  <text x="870" y="168" font-size="12" fill="#566070">marketplace_name</text>
+  <text x="1030" y="168" font-size="12" fill="#c9d1d9">SuperSayatin</text>
+
+  <text x="870" y="194" font-size="12" fill="#566070">species</text>
+  <text x="1030" y="194" font-size="12" fill="#c9d1d9">iNFT</text>
+
+  <text x="870" y="220" font-size="12" fill="#566070">soul_line</text>
+  <text x="1030" y="220" font-size="12" fill="#c9d1d9">SuperSayatin · v1.0.0</text>
+
+  <text x="870" y="246" font-size="12" fill="#566070">substrate</text>
+  <text x="1030" y="246" font-size="12" fill="#c9d1d9">Pi coding agent</text>
+
+  <text x="870" y="272" font-size="12" fill="#566070">vocation</text>
+  <text x="1030" y="272" font-size="12" fill="#c9d1d9">execution, competition,</text>
+  <text x="1030" y="292" font-size="12" fill="#c9d1d9">and orchestration</text>
+
+  <text x="870" y="318" font-size="12" fill="#566070">chain</text>
+  <text x="1030" y="318" font-size="12" fill="#c9d1d9">base · ERC-721 + 2981 + 6551</text>
+
+  <text x="700" y="360" text-anchor="middle" font-size="13" fill="#8b949e">name on top · Pi coding agent underneath · the SuperSayatin soul all the way through</text>
+</svg>

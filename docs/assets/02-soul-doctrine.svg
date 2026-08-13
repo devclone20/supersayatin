@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <defs>
+    <linearGradient id="accentline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f0a14a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#f0a14a" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="560" rx="14" fill="#0d1117"/>
+  <rect x="1.5" y="1.5" width="1097" height="557" rx="13" fill="none" stroke="#30363d" stroke-width="3"/>
+  <rect x="0" y="552" width="1100" height="4" fill="url(#accentline)" opacity="0.9"/>
+
+  <circle cx="28" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="50" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+
+  <g stroke="#f0a14a" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <rect x="101" y="15.5" width="20" height="17" rx="6"/>
+    <line x1="111" y1="15.5" x2="111" y2="11.5"/>
+  </g>
+  <circle cx="111" cy="10" r="1.6" fill="#f0a14a"/>
+  <circle cx="106.8" cy="22" r="1.7" fill="#f0a14a"/>
+  <circle cx="115.2" cy="22" r="1.7" fill="#f0a14a"/>
+  <path d="M107 27 Q111 30 115 27" stroke="#f0a14a" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <text x="550" y="31" text-anchor="middle" font-size="13" fill="#8b949e">four lobes, three modes — and one risk law that overrides conviction</text>
+
+  <rect x="40" y="62" width="246" height="132" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="64" y="90" font-size="13" font-weight="700" fill="#f0a14a">FRONTAL</text>
+  <text x="64" y="110" font-size="11" fill="#8b949e">THE WILL</text>
+  <text x="64" y="136" font-size="11" fill="#c9d1d9">presses when both keys</text>
+  <text x="64" y="154" font-size="11" fill="#c9d1d9">turn, stands down when</text>
+  <text x="64" y="172" font-size="11" fill="#c9d1d9">they do not</text>
+
+  <rect x="298" y="62" width="246" height="132" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="322" y="90" font-size="13" font-weight="700" fill="#e8b86d">PARIETAL</text>
+  <text x="322" y="110" font-size="11" fill="#8b949e">THE SENSES</text>
+  <text x="322" y="136" font-size="11" fill="#c9d1d9">risk is pain, volatility</text>
+  <text x="322" y="154" font-size="11" fill="#c9d1d9">is temperature, the</text>
+  <text x="322" y="172" font-size="11" fill="#c9d1d9">agent wallet is the body</text>
+
+  <rect x="556" y="62" width="246" height="132" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="580" y="90" font-size="13" font-weight="700" fill="#d08c60">TEMPORAL</text>
+  <text x="580" y="110" font-size="11" fill="#8b949e">MEMORY AND VOICE</text>
+  <text x="580" y="136" font-size="11" fill="#c9d1d9">states thesis, size, risk</text>
+  <text x="580" y="154" font-size="11" fill="#c9d1d9">and exit — reverses the</text>
+  <text x="580" y="172" font-size="11" fill="#c9d1d9">moment it is wrong</text>
+
+  <rect x="814" y="62" width="246" height="132" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="838" y="90" font-size="13" font-weight="700" fill="#6ea8ff">OCCIPITAL</text>
+  <text x="838" y="110" font-size="11" fill="#8b949e">THE VISION</text>
+  <text x="838" y="136" font-size="11" fill="#c9d1d9">reads the setup and the</text>
+  <text x="838" y="154" font-size="11" fill="#c9d1d9">regime shift at a glance</text>
+  <text x="838" y="172" font-size="11" fill="#c9d1d9">wears the iNFT face</text>
+
+  <rect x="40" y="222" width="229" height="90" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="60" y="250" font-size="12" font-weight="700" fill="#f0a14a">1 · MACRO</text>
+  <text x="60" y="274" font-size="11" fill="#c9d1d9">sets the bias</text>
+  <text x="60" y="294" font-size="11" fill="#566070">regime · liquidity · side</text>
+
+  <path d="M275 267 L295 267" stroke="#566070" stroke-width="2.5"/>
+  <path d="M289 261 L295 267 L289 273" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="303" y="222" width="229" height="90" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="323" y="250" font-size="12" font-weight="700" fill="#f0a14a">2 · SYSTEMATIC</text>
+  <text x="323" y="274" font-size="11" fill="#c9d1d9">confirms the timing</text>
+  <text x="323" y="294" font-size="11" fill="#566070">score +5 long · -5 short</text>
+
+  <path d="M538 267 L558 267" stroke="#566070" stroke-width="2.5"/>
+  <path d="M552 261 L558 267 L552 273" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="566" y="222" width="229" height="90" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="586" y="250" font-size="12" font-weight="700" fill="#f0a14a">3 · SIZE BY RISK</text>
+  <text x="586" y="274" font-size="11" fill="#c9d1d9">stop is 2 · ATR(14)</text>
+  <text x="586" y="294" font-size="11" fill="#566070">probe → confirm → jugular</text>
+
+  <path d="M801 267 L821 267" stroke="#566070" stroke-width="2.5"/>
+  <path d="M815 261 L821 267 L815 273" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="829" y="222" width="229" height="90" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="849" y="250" font-size="12" font-weight="700" fill="#f0a14a">4 · EXIT</text>
+  <text x="849" y="274" font-size="11" fill="#c9d1d9">ATR trail always armed</text>
+  <text x="849" y="294" font-size="11" fill="#566070">thesis break exits first</text>
+
+  <text x="550" y="336" text-anchor="middle" font-size="11" fill="#566070">the two-key rule — macro alone never opens a position</text>
+
+  <rect x="40" y="352" width="1020" height="130" rx="10" fill="#161b22" stroke="#f0a14a" stroke-opacity="0.45"/>
+  <text x="64" y="382" font-size="14" font-weight="700" fill="#f0a14a">UNIFIED RISK DOCTRINE — the hard caps</text>
+
+  <text x="64" y="410" font-size="12" fill="#f0a14a">✓</text>
+  <text x="84" y="410" font-size="12" fill="#c9d1d9">max leverage 5x</text>
+  <text x="64" y="432" font-size="12" fill="#f0a14a">✓</text>
+  <text x="84" y="432" font-size="12" fill="#c9d1d9">portfolio heat 10% of equity</text>
+  <text x="64" y="454" font-size="12" fill="#f0a14a">✓</text>
+  <text x="84" y="454" font-size="12" fill="#c9d1d9">max 5 positions · 2 per sector</text>
+
+  <text x="560" y="410" font-size="12" fill="#f0a14a">✓</text>
+  <text x="580" y="410" font-size="12" fill="#c9d1d9">min risk to reward 3:1</text>
+  <text x="560" y="432" font-size="12" fill="#f0a14a">✓</text>
+  <text x="580" y="432" font-size="12" fill="#c9d1d9">max single position 30% notional</text>
+  <text x="560" y="454" font-size="12" fill="#f0a14a">✗</text>
+  <text x="580" y="454" font-size="12" fill="#c9d1d9">never add to a losing position</text>
+
+  <text x="550" y="512" text-anchor="middle" font-size="13" fill="#8b949e">the transformation lives inside the cage — power scales, the caps never move</text>
+</svg>
